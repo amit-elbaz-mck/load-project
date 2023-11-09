@@ -1,0 +1,27 @@
+kind: project
+metadata:
+  name: amit-proj
+  created: '2023-11-09T13:28:49.723000'
+spec:
+  functions:
+  - url: delete-project.ipynb
+    name: elbaz-nuclio-func
+    kind: nuclio
+    image: mlrun/mlrun
+    handler: handler
+  - url: delete-project.ipynb
+    name: elbaz-job-func
+    kind: job
+    image: mlrun/mlrun
+    handler: handler
+  workflows: []
+  artifacts: []
+  conda: ''
+  source: ''
+  desired_state: online
+  build:
+    commands: []
+    requirements: []
+  custom_packagers: []
+status:
+  state: online
